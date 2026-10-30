@@ -15,6 +15,7 @@ This document defines the scope and rules of engagement for security testing of 
 | Item | Detail |
 |---|---|
 | Environment | Staging (isolated from production) |
+| Portal hostname | staging.microfinco.example |
 | Network range | 10.20.30.0/24 (fictional) |
 | Hosting | Private cloud VPC, region ap-south |
 | Data | Synthetic only; no real customer data |
@@ -24,7 +25,7 @@ This document defines the scope and rules of engagement for security testing of 
 
 | ID | Asset | Test activity | Risk assessment ref. |
 |---|---|---|---|
-| S-01 | Loan portal web app (staging.microfinco.example) | Vulnerability scan, OWASP Top 10 checks | RA-2026-04 |
+| S-01 | Loan portal web app | Vulnerability scan, OWASP Top 10 checks | RA-2026-04 |
 | S-02 | Customer API (10.20.30.15) | Authentication and authorization testing | RA-2026-05 |
 | S-03 | Database server (10.20.30.20) | Configuration review, access control checks | RA-2026-06 |
 | S-04 | Admin VPN gateway (10.20.30.5) | Patch level and configuration audit | RA-2026-07 |
